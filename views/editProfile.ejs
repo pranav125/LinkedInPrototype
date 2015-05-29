@@ -1,0 +1,158 @@
+<html lang="en" ng-app="">
+<head>
+<% include header %>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<% include navbar %>
+<div >
+<!-- 	<h2>Sign-Up</h2> -->
+ <!--<div class="all-header">
+   <img class="image-position" src="/stylesheets/header_logo.png" > 
+  </div>--><br><br><br><br><br><br>
+	<form action="/updateProfile" method="post" class="updateProfile">
+		<!-- This panel is for login -->
+
+		<div class="panel panel-primary">
+			<!-- Default panel contents -->
+			<div class="panel-heading" color='red'>Update</div>
+			<div class="panel-body">
+				<form class="form-horizontal" role="form">
+					<div class="form-group  usernameDiv">
+						<div class="col-sm-10">
+							<textarea type="summary" class="form-control" name="summary"
+								id="summary" placeholder="summary"><%=results[0].summary%></textarea>
+						</div>
+					</div>
+					
+<!-- 					<div class="form-group email"> -->
+<!-- 						<div class="col-sm-10"> -->
+<!-- 							<textarea type="email" class="form-control" name="email" -->
+<!-- 								id="email" placeholder="email"><%=results[0].email%></textarea> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+
+					<div class="form-group  usernameDiv">
+						<div class="col-sm-10">
+							<textarea type="education" class="form-control" name="education"
+								id="lastName" placeholder="education"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group  usernameDiv">
+						<div class="col-sm-10">
+							<textarea type="skills" class="form-control" name="skills" id="skills"
+								placeholder="skills"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group  usernameDiv">
+						<div class="col-sm-10">
+							<textarea type="experience" class="form-control" name="experience"
+								id="experience" placeholder="experience"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<div class="pull-left signIn">
+							<button type="submit" class="btn btn-primary btn-sm btn">Update Profile</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</form>
+</html>
+<!--   <form action="/afterSignup" method="post" name="afterSignup" class="afterSignup" novalidate>
+      <div class="form-group"> 
+       <form class="form-inline">
+         <b><input type="text" class="form-control" id ="firstname" ng-model="firstname" ng-minlength=3 ng-maxlength=20 placeholder="First Name" required/>
+         <div class="error" ng-show="signup_form.firstname.$dirty && signup_form.firstname.$invalid">
+           <small class="error" ng-show="signup_form.firstname.$error.required">
+               Your first name is required.
+           </small>
+      <small class="error" ng-show="signup_form.firstname.$error.minlength">
+            Your first name is required to be at least 3 characters
+      </small>
+       <small class="error" ng-show="signup_form.firstname.$error.maxlength">
+            Your first name cannot be longer than 20 characters
+       </small>
+
+         </div>        
+      
+    
+    <div class="form-group">
+    <b><input type="text" class="form-control" id ="lastname" ng-model="lastname" ng-minlength=3 ng-maxlength=20 placeholder="Last Name" required/>
+       <div class="error" ng-show="signup_form.lastname.$dirty && signup_form.lastname.$invalid">
+           <small class="error" ng-show="signup_form.lastname.$error.required">
+               Your last name is required.
+           </small>
+      <small class="error" ng-show="signup_form.lastname.$error.minlength">
+            Your last name is required to be at least 3 characters
+      </small>
+       <small class="error" ng-show="signup_form.lastname.$error.maxlength">
+            Your last name cannot be longer than 20 characters
+       </small>
+
+         </div>           
+    
+   </div></br>
+   <br><div align="right" class="form-group">
+        <b><input type="email" class="form-control" id ="email" placeholder="Email address">
+       </div>
+      <div class="form-group"> 
+      
+      <b><input type="password" class="form-control" id ="password" placeholder="Password(6 or more characters)">
+     
+      </div>
+      </form>
+      </div>
+      
+          <div align="right">
+      <p>
+      	<button type="button" class="btn btn-primary btn-lg btn">Join Now</button>
+      </p>
+      
+   </div>
+      
+  </form> -->
+
+
+
+</html>
+<!-- <div class="row">
+    <div class="col-md-4">
+         <h2>Heading</h2> 
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+            mollis euismod. Donec sed odio dui.</p>
+        <p>
+            <a class="btn btn-default" href="#" role="button">View details
+                &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+            mollis euismod. Donec sed odio dui.</p>
+        <p>
+            <a class="btn btn-default" href="#" role="button">View details
+                &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>
+            <a class="btn btn-default" href="#" role="button">View details
+                &raquo;</a>
+        </p>
+    </div>
+</div>
+ -->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+
+<head>
+ <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<link rel='stylesheet' href='/css/stylesheet.css' />
+<link rel='stylesheet' href='/css/style.css' />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script  src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+<style type="text/css">
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}</style>
+</head>
+
+
+<body>
+
+<% include navbar %>
+
+<div class="page-header">
+   
+       <div class="container">
+      <!--  <p>
+        <img src="/Images/logo_in_nav_44x36.png" alt="logo"> 
+       </p> -->
+                 
+<!--            <form action="/logout" method="post" class="logout"> -->
+<!-- 			   <div class="signout-button" align="right"> -->
+<!-- 			       <p><br> -->
+<!--       			   <button type="submit" class="btn btn-primary btn-sm btn">Sign Out</button> -->
+<!--       			  </p> -->
+<!--       			  </div> -->
+<!--       		</form> -->
+      	
+                 <p>
+                    <% include search %>
+                 </p>
+
+			
+
+			<form action="/editProfile" method = "post" class="editProfile">
+      			   <p>
+      			   <br><br><button type="submit" class="btn btn-primary btn-sm btn">Edit Profile</button>
+      			   </p>
+                </form>
+   			</div>
+   		</div>
+
+
+
+<div class="panel panel-primary">
+	<div class="panel-body">
+       <form class="form-horizontal">
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Summary </label>
+    <div class="col-sm-10">
+      <label type="text" class="summary" id="summary" placeholder="summary" style=	 rows="5" cols="50"></label>
+    </div>
+    
+  </div>
+  
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Education</label>
+    <div class="col-sm-10">
+      <label type="text" class="education" id="education" placeholder="education" style="overflow:auto;resize:none" rows="5" cols="50"></label>
+       
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Skills</label>
+    <div class="col-sm-10">
+      <label type="text" class="skills" id="skills" placeholder="skills" style="overflow:auto;resize:none" rows="5" cols="50"></label>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Experience</label>
+    <div class="col-sm-10">
+      <label type="text" class="experience" id="experience" placeholder="experience" style="overflow:auto;resize:none" rows="5" cols="50"></label>
+    </div>
+  </div>
+  
+    <div class="form-group email">
+						<div class="col-sm-10">
+							<textarea type="email" class="form-control" name="email"
+								id="email" placeholder="email"><%=results[0].email%></textarea>
+						</div>
+					</div>
+    
+  
+   
+     </form>
+ </div>
+</div>
+
+
+</body>
+<% include footer %>
+</html>

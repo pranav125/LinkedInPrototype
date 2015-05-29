@@ -1,0 +1,42 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            
+        </div>
+        <div class="navbar-collapse collapse">
+                    <p>
+       			<img src="/Images/logo_in_nav_44x36.png" alt="logo"> 
+       			</p>
+       			
+             	   <form action="/logout" method="post" class="logout">
+			   <div class="signout-button"align="right">
+			       <p>
+      			   <button type="submit" class="btn btn-primary btn-sm btn">Sign Out</button>
+      			  </p>
+      			  </div>
+      		</form>
+           
+               
+       		
+      		
+                <div class="message-position" align="right">
+				<ul>
+					
+					<li><h5>
+							Last Login Time <span class="label label-primary"><%=results[0].lastLogin %></span>
+						</h5></li>
+				</ul>
+		   </div>
+		     
+		   <ul class="nav navbar-nav">
+		   
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>

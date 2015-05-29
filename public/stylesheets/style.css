@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+label {
+color:#464646;
+text-shadow:0 1px 0 #fff;
+font-size:14px;
+font-weight:700
+}
